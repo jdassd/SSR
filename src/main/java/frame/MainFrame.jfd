@@ -1,0 +1,76 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"visible": true
+			"minimumSize": new java.awt.Dimension( 625, 395 )
+			"defaultCloseOperation": 3
+			"title": "SSR链接管理工具-Gsssrvip"
+			"autoRequestFocus": false
+			"$sizePolicy": 1
+			"resizable": false
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "创建源文件"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 330
+				"y": 35
+				"width": 110
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "生成随机文件"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button2MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 330
+				"y": 125
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "源文件即SSR链接文件，一般只用一次此功能"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 265
+				"y": 85
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "最好只用一次，以后不要再用，默认生成2000个文件，随机文件命名格式为，随机UUID+用户编号"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 70
+				"y": 175
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "根据源文件加密所有随机文件并打包"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button3MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 130
+				"y": 230
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "根据源文件生成BASE64编码，存入所有生成的随机文件里，并且打包所有随机文件（该功能苹果订阅会出现问题）"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 40
+				"y": 285
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "根据复制文件加密所有随机文件并打包"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button4MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 405
+				"y": 230
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 860, 335 )
+		} )
+	}
+}
